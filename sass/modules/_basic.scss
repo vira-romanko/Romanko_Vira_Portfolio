@@ -1,0 +1,276 @@
+body{
+    background-color:$bg;
+    font-family: $nunito;
+    color: $darkpurple;
+}
+.hidden {
+    display: none;
+  }
+
+  .logo{
+      height: 90px;
+  }
+  .social{
+      
+      margin-top: 20px;
+      
+   a{
+       padding:8px;
+       &:hover{
+        opacity: 0.5;
+    }
+   }
+  }
+  
+  .navigationBar {
+      //position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+  
+  }
+  
+  .scrollTo {
+    cursor: pointer;
+   
+  }
+  
+  .desktop {
+      display:flex;
+      flex-direction: row;
+     
+    color:$nav;
+    padding: 20px;
+    
+    
+    ul {
+      display: flex;
+     
+      
+    }
+    li {
+    
+      padding: 10px;
+      list-style-type: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 3px;
+      background: $bg;
+    color:$nav;
+    
+     }
+  }
+
+  .hovercenter {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hovercenter:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: $darkpurple;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hovercenter:hover:before, .hovercenter:focus:before, .hovercenter:active:before {
+    left: 0;
+    right: 0;
+    
+  }
+  
+  
+  
+  .hamburgerMenu {
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:5px;
+    div {
+      width: 40px;
+      height: 5px;
+      background:$darkpurple;
+      border-radius: 30px;
+    }
+  }
+  
+  .navBar {
+    display: none;
+  }
+  
+  .mobile {
+    background:$darkpurple;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    border-radius: 5px;
+  
+    li {
+    font-family: $nunito;
+      padding: 20px;
+      font-size: 4vh;
+      text-align: center;
+      color: $bg;
+      &:hover{
+          color:$four;
+
+      }
+    }
+  }
+  
+  .toggle {
+    display: block;
+  }
+
+
+  
+  .footer{
+      height: 80px;
+      background-color: $footer;
+      display: flex;
+      justify-content: space-between;
+      p{
+          font-size:2vh;
+          font-family:$alegreya;
+          text-align: center;
+          align-self: center;
+          margin-right: 20px;
+      }
+  }
+
+  #to-top{
+     display: block;
+    //float: right;
+    margin-left:0px;
+    padding: 10px;
+      
+  }
+
+  .hero{
+      display:block;
+      justify-content: space-evenly;
+      font-weight: bold;
+      article{
+          
+          width:50%;
+          margin:20px;
+          margin-top:40px;
+          margin-left: 65px;
+          font-family: $nunito;
+          font-size:3vh;
+          font-weight:bold;
+          color:$darkpurple;
+          text-align: left;
+          line-height: 1.5;
+          #function{
+              color:$functionality;
+              
+             
+          }
+          #creative{
+              color:$orange;
+          }
+      }
+  }
+  #ballon{
+      width:50%;
+      margin-top:20px;
+  }
+
+  .skills-purple{
+      margin-top: 20px;
+      background-color: $darkpurple;
+      color:$bg;
+      font-family: $alegreya;
+      font-size: 2.75vh;
+      
+      p{
+          padding:30px;
+          margin:20px;
+      }
+      .skills-img{
+          margin: 0 auto;
+      }
+  }
+
+  .skills-header{
+      font-size: 3vh;
+      margin-top:20px;
+      margin-bottom:20px;
+  }
+
+  
+  .sections{
+      font-family: $nunito;
+      font-size: 5vh;
+      font-weight: 400;
+    //   margin-left: 20px;
+   
+     padding:50px;
+    text-align: left;
+  }
+
+  .about{
+    p{
+      margin-top:30px;
+      font-family: $alegreya;
+      font-size: 2.75vh;
+      color:$textbody;
+      padding:20px 30px 20px 30px;
+      
+     
+
+    }
+   
+  }
+  .hello1{
+    margin:30px;
+    text-align: left;
+    font-family: $alegreya;
+  }
+
+  .vira{
+    color:$firstinitial;
+    font-weight: bold;
+  }
+
+  .romanko{
+    color:$secondinitial;
+    font-weight: bold;
+   
+  }
+  .vision{
+    font-weight: bold;
+    color:$darkpurple;
+  }
+.a-title{
+  color:$darkpurple;
+}
+
+
+
+  
+  
