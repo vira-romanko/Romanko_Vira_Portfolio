@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
   console.log( "send back the static file");
   res.sendFile((path.join(__dirname, '../views/index.html')));
+ 
 });
 
 router.get('/portfoliodata/:target', (req, res)=> {

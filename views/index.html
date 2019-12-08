@@ -4,76 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css">
+   
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"> </script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-    <title>SVG Animation with Waypoint and Greensock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
+
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"> </script>
+
+    <title>Vira Romanko</title>
 </head>
 <body>
-    <h1 class="main-header">SVG with Greensock and Waypoint.js</h1>
-    <main>
-        <!-- if we were using a framework, these might be 6-col or something-->
-        <section id="beer1">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/bottleGraphic.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
-            <span class="see-more" data-target="1">See more</span>
-          </div>
+    <h1 class="hidden">Vira Romanko Portfolio</h1>
 
-          <div class="text-wrapper">
-            <h3>Beer In Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
+    <header>
+        <h2 class="hidden">Header</h2>
+        <nav class="navigationBar">
+          <h3 class="hidden">Main Navigation</h3>
+          <a href="/"
+            ><img class="logo" src="images/logo.svg" alt="logo"
+          /></a>
+          <div class="navBar desktop top">
+            <ul>
+              <li class="scrollTo hovercenter">Skills</li>
+              <li class="scrollTo hovercenter">About</li>
+              <li class="scrollTo hovercenter">Portfolio</li>
+              <li class="scrollTo hovercenter">Contact</li>
+            </ul>
+            <div class="social">
+                    <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="linkedin"/></a>
+                    <a href="https://www.github.com/"><img src="images/github.svg" alt="github"/></a>
+                    <a href="https://www.dribble.com/"><img src="images/dribbble.svg" alt="dribbble"/></a>
+                  </div>
           </div>
-        </section>
-
-        <section id="beer2">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/beerBarrels.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
-            <span class="see-more" data-target="2">See more</span>
+          <div class="hamburgerMenu">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
+        </nav>
+        <nav class="navBar mobile">
+          <h2 class="hidden">Main Navigation Mobile</h2>
+          <ul>
+              <!-- <li><a id="hero-link" href="#hero">Home</a></li> -->
+                <li class="scrollTo">Skills</li>
+                <li class="scrollTo">About</li>
+                <li class="scrollTo">Portfolio</li>
+                <li class="scrollTo">Contact</li>
+          </ul>
+          <div class="social">
+                <a href="https://www.linkedin.com/in/vira-romanko-8b1154198/"><img src="images/linkedin.svg" alt="linkedin"/></a>
+                <a href="https://github.com/vira-romanko"><img src="images/github.svg" alt="github"/></a>
+                <a href="https://dribbble.com/vira_romanko"><img src="images/dribbble.svg" alt="dribbble"/></a>
+              </div>
+        </nav>
+        <div class="hero">
+            </div>
+    </header>
+    <section class="hero">
+       <h2 class="hidden">Hero Section</h2>
+       <article>Keeping the balance between <span id="function">functionality </span>and <span id="creative">creativity</span></article>
+       <object data="images/hero.svg" type="image/svg+xml"  id="ballon"></object>
+       
+    </section>
+    <section   class="skills-purple">
+            <h1 class="sections"> Skills</h1>
 
-          <div class="text-wrapper">
-            <h3>Beer In Barrels</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-            <p>
-              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
-            </p>
-          </div>
-        </section>
+            <div class="skills">
+                    
+        
+                    <div id="dev">
+                        <h2 class="skills-header"> Web Development</h2>
+                        <picture  class="skills-img1">
+                          <source srcset="images/gif1-small.gif" media="(max-width: 1064px)">
+                            <img src="images/gif1-large.gif" alt="Web Development">
+                        </picture>
+                    
+                       
+                        <p>Experience in Frontend and Backend web development with HTML5 / CSS3, Javascript, NodeJS, VueJS, PHP/MySQL. Laravel and Drupal.</p>
+            
+                    </div>
+                    <div id="des">
+                            <h2 class="skills-header"> Web Design</h2>
+                            <picture  class="skills-img2">
+                              <source srcset="images/gif3-small.gif" media="(max-width: 1064px)">
+                                <img src="images/gif3-large.gif" alt="Web Design">
+                            </picture>
+                          
+                            <p>Approaching digital media design and UX/UI layouts in a clean and dynamic way. Use of Adobe Creative package for the creative mood.</p>
+                        </div>
+                        <div id="production">
+                                <h2 class="skills-header"> Media Production</h2>
+                                <picture class="skills-img3">
+                                  <source srcset="images/gif3-small.gif" media="(max-width: 1064px)">
+                                    <img src="images/gif3-large.gif" alt="Media Production">
+                                </picture>
+                                <p> A positive and effective communication involves different types of media. Problem Solving solutions with Design Thinking and going outside of the box.</p>
+                    
+                            </div>
+                  
+                </div>
 
-        <section id="beer3">
-          <div class="label_wrapper">
-            <h1 class="hidden">Plain old beer</h1>
-            <object data="images/qualityBeer.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
-            <span class="see-more" data-target="3">See more</span>
-          </div>
 
-          <div class="text-wrapper">
-            <h3>Beer in Fancy Glasses</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
-            </p>
-          </div>
-        </section>
+    </section>
+    <section>
+        <h1 class="sections a-title">About</h1>
+      <div  id="hero"class="about">
 
-        <article class="popover">
-          <h4 class="ipa-rating"> IPA Rating</h4>
-          <div class="ratings"> Average RAting:</div>
-          <p class="beer-description"></p>
-        </article>
-    </main>
+          <picture>
+              <source srcset="images/about-mobile.jpg" media="(max-width: 786px)">
+                <img src="images/about-tablet.jpg" alt="Profile Image">
+            </picture>
+            <div class="about-text">
+              <h1 class="hello1"> OH, HELLO THERE!</h1>
+              <p>
+                
+                My name is <span class="vira">Vira</span> <span class="romanko">Romanko</span> and I am a junior front-end developer with design passion. I believe that great design is practical and oriented on the end user. 
+                Aside from designing and coding, I love music, photography and wake boarding!
+                My main goal in the work process is to break down big tasks into small ones and ensure that customers are satisfied with the end deliverables.  
+          
+          
+                <span class="vision"> Share my vision?  Take a look at my works</span>
+              </p>
+            </div>
+
+      </div>
+     
+     
+    
+
+    </section>
+    
+    
+   <section >
+       <h2 class="hidden"> Back to top</h2>
+        <a id="to-top" href="/" class="nav-item"><img src="images/back.svg" alt="back to top"/></a>
+   </section>
+    
+
+    <footer class="footer">
+
+            <a href="/">
+                <img class="logo" src="images/logo.svg" alt="logo"/>
+               
+            </a>
+            <p>Copyright (c) 2019 by Vira Romanko</p>
+
+    </footer>
+    
+    
     <script src="js/main.js"></script>
+    <script src="js/modules/scroll.js"></script>
+    <script src="js/modules/hamburger.js"></script>
+    <!-- <script src="js/modules/video_controls.js"></script> -->
+    <script src="js/modules/ScrollMagic.js"></script>
+    <!-- <script src="js/modules/submission.js"></script> -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       once: true,
+        offset: 100,
+        duration: 5000
+        
+    });
+   
+    
+  </script> -->
 </body>
 </html>
