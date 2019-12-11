@@ -139,6 +139,83 @@
     
 
     </section>
+
+    <section class='portfolio'>
+      <h1 class="hidden">Portfolio Section</h1>
+      <h1 class="sections">Portfolio</h1>
+      <div class="indicator">
+        <a href="#all">All</a>
+        <div class="yellow-box"></div>
+        <a href="#development-portfolio">Development</a>
+        <div class="yellow-box"></div>
+        <a href="#design-portfolio">Design</a>
+      </div>
+
+      <div class="video">
+          <div class="videoOverlay">
+            <img src="images/play_button.svg" alt="Play Button" />
+          </div>
+          <!-- <video  id="video_p"src="video/portfolio.mp4" muted></video> -->
+         <video><source src="video/portfolio.mp4" type='video/mp4' muted></video>
+          <!-- video controls -->
+          <div id="videoControls">
+            <div>
+              <img
+                id="playPause"
+                src="images/play_button.svg"
+                alt="Play svg icon"
+              />
+            </div>
+            <input type="range" id="timeBar" value="0" />
+            <div>
+              <img id="mute" src="images/muted.svg" alt="Mute svg icon" />
+            </div>
+            <input
+              type="range"
+              id="volumeBar"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+            <div>
+              <img
+                id="fullScreen"
+                src="images/expand.svg"
+                alt="Expended svg icon"
+              />
+            </div>
+          </div>
+          </div>
+          
+   
+  
+
+    </section>
+    <section class="contact">
+      <h1 class="sections">Contact</h1>
+      <h2 class="subline">Don't be a stranger. Drop me a line.</h2>
+      <div class="contact-form">
+<div class="contact-balloon">
+  <h3 class="explore">Let's explore together</h3>
+  <img src="images/contact_balloon.svg"alt="hot air balloon"/>
+</div>
+<div class="contactFormFull">
+    <form action="data" method="post">
+      <label  for="name-field"> Name</label>
+      <input  id="name-field" name="name" type="text" placeholder=" Enter your name">
+      <label for="email-field"> Email</label>
+      <input id="email-field" name="email" type="email" placeholder="Enter your email">
+      <label for="subject-field"> Subject</label>
+      <input id="subject-field" name="subject"type="text" placeholder="Subject line">
+      <label for="message-field"> Message</label>
+      <textarea id="message-field" name="massage" placeholder="Message"></textarea>
+    <button id="sub-button" class="go-back"type="submit">Send</button>
+   </form>
+</div>
+      </div>
+
+    </section>
     
     
    <section >
@@ -159,9 +236,10 @@
     
     
     <script src="js/main.js"></script>
+    <script src="js/modules/video_controls.js"></script>
     <script src="js/modules/scroll.js"></script>
     <script src="js/modules/hamburger.js"></script>
-    <!-- <script src="js/modules/video_controls.js"></script> -->
+    
     <script src="js/modules/ScrollMagic.js"></script>
     <!-- <script src="js/modules/submission.js"></script> -->
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
