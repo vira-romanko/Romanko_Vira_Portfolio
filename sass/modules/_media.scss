@@ -42,6 +42,19 @@
         padding:50px;
       
     }
+
+    .contactFormFull
+{
+  form{
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+.contact-balloon{
+  img{
+    width: 50%;
+  }
+}
   }
   //DESKTOP
   @media screen and (min-width: 1064px) {
@@ -139,6 +152,27 @@
       padding:50px;
     
   }
+
+  .contact-form
+{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+
+  form{
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 100%;
+    button{
+      width: 100%;
+    }
+  }
+}
+
+.contact-balloon{
+  img{
+    width: 150%;
+  }}
  
     
   }

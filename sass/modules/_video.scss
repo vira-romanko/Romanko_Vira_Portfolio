@@ -1,0 +1,92 @@
+.video {
+    position: relative;
+    display: flex;
+   
+    // align-items: center;
+    // justify-content: center;
+    width: 100%;
+    background: #232323;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid white;
+    align-items: flex-end;
+  
+    video {
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid white;
+  
+    }
+  }
+  
+  .videoOverlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/video_overlay_small.jpg) no-repeat center center;
+    border-radius: 20px;
+    border: 1px solid white;
+  
+    img {
+      height: 100px;
+      transition: all 0.3s ease;
+      opacity: 0.5;
+    }
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+    &:active {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .videoOverlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/video_overlay_small.jpg) no-repeat center center;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+
+#videoControls {
+    outline: none;
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    padding-bottom: 10px;
+  
+    #playPause,
+    #fullScreen,
+    #mute {
+      height: 35px;
+    }
+  }
+  
+  .video:hover > #videoControls {
+    opacity: 1;
+  }
+  
