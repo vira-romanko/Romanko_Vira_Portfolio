@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app"
+    "start": "node app"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
@@ -14,7 +14,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql": "^2.17.1",
-    "nodemon": "^2.0.1",
+  
     "scrollmagic": "^2.0.7"
   },
   "devDependencies": {

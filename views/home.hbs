@@ -72,7 +72,7 @@
 
     </section>
 
-    <section class='Portfolio portfolio'>
+    <section class='Portfolio portfolio '>
       <h1 class="hidden">Portfolio Section</h1>
       <h1 class="sections">Portfolio</h1>
       <div class="indicator">
@@ -84,39 +84,43 @@
       </div>
 
       
-          
+    <section id="pices">  
        {{#each portfolio}}
       <div class="user-panel">
           <img  class="b-cover" src="images/{{image}}">
           <a class="b-link" href="{{ID}}">
-              <h1 >
+              <h1 class="name" >
               {{name}}
           </h1>
             
           </a> 
        
           
-  
+  <p>{{description}}</p>
   
       </div>
       
   
   
           {{/each}}
+          </section>
           
-      <section class="lightbox">
+      <section class="lightbox purple">
         <div class="lb-content">
-             
+             <p>{{description}}</p>
 
+        </div>
+        <div class="sidebar">
+            <img src="images/{{image}}" alt="larger bio image">
         </div>
         <h1 class="name"></h1>
       
-       <div class="close">
+       <div class="close go-back">
        <span > Close </span>
        </div>
           
   
-
+</section>
     </section>
     <section class="Contact contact">
       <h1 class="sections">Contact</h1>

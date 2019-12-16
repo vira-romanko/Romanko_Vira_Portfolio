@@ -61,9 +61,30 @@
     width: 4%;
   }
 }
+#pices{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.user-panel{
+  .b-cover{
+    max-width: 300px;
+  }
+}
+
   }
   //DESKTOP
   @media screen and (min-width: 1064px) {
+    .user-panel{
+      .b-cover{
+        max-width: 500px;
+      }
+
+      .b-link{
+        font-size: 3.25vh;
+      }
+    }
     
     .navigationBar {
         padding: 0px;
