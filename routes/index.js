@@ -7,7 +7,7 @@ const connect = require('../utils/sql');
 
 
 router.get('/', (req,res)=>{
-  console.log("at the main route");
+  //console.log("at the main route");
   connect.getConnection((err, connection) => {
     if (err){
       return 
@@ -38,7 +38,7 @@ router.get('/users/:id', (req, res)=> {
   let query =`SELECT * FROM tbl_projects WHERE ID="${req.params.id}"`;
   connect.query(query, (err, result)=>{
     connection.release();
-    console.log('getting data');
+    //console.log('getting data');
     if (err) console.log(err);//somthing done broke!
 
     result[0].tags = result[0].tags.split(',').map(function(item) {
