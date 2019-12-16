@@ -46,7 +46,7 @@ router.get('/users/:id', (req, res)=> {
 
       return item;
    });
- console.log('after split: ', result[0]);
+ //console.log('after split: ', result[0]);
      
     //console.log(result);//send that row back to the calling function
     //return(result);
