@@ -44,7 +44,7 @@ You can visit my site at
 ## Future Plans
 * add category filter in portfolio section
 * finish up backend part for contact section
-* figure ourt hosting issues
+* figure out hosting issues
 * add morph svg with GreenSock 
 * make page for each portfolio project, add more text
 * change hero air balloon to something different
