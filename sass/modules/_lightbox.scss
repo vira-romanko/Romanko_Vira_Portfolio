@@ -166,9 +166,11 @@
     flex: 0 1 200px;
    text-align: center;
    padding: 8px;
+   margin-top: 50px;
+  
   
 
-   .b-cover { max-width: 200px; }
+   .b-cover { max-width: 300px; }
 
    .b-link { 
        display: block; 
@@ -177,6 +179,9 @@
        margin: 0 auto;
        //background-color: rgba(255, 255, 255, 0.8);
        padding: 5px;
+       font-size: 3vh;
+       color: $darkpurple;
+
    }
 
    h1, h3 { margin: 5px 0; }

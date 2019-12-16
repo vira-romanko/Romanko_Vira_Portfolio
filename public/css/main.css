@@ -389,14 +389,17 @@ body {
 .user-panel {
   flex: 0 1 200px;
   text-align: center;
-  padding: 8px; }
+  padding: 8px;
+  margin-top: 50px; }
   .user-panel .b-cover {
-    max-width: 200px; }
+    max-width: 300px; }
   .user-panel .b-link {
     display: block;
     text-decoration: none;
     margin: 0 auto;
-    padding: 5px; }
+    padding: 5px;
+    font-size: 3vh;
+    color: #37112E; }
   .user-panel h1, .user-panel h3 {
     margin: 5px 0; }
 
@@ -438,8 +441,22 @@ body {
     width: 50%; }
 
   #to-top img {
-    width: 4%; } }
+    width: 4%; }
+
+  #pices {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly; }
+
+  .user-panel .b-cover {
+    max-width: 300px; } }
 @media screen and (min-width: 1064px) {
+  .user-panel .b-cover {
+    max-width: 500px; }
+  .user-panel .b-link {
+    font-size: 3.25vh; }
+
   .navigationBar {
     padding: 0px; }
     .navigationBar .logo {
