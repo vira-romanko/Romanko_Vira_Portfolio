@@ -50,4 +50,6 @@ In terminal go ``docker-compose up``
 * add morph svg with GreenSock 
 * make page for each portfolio project, add more text
 * change hero air balloon to something different
+* fix brocken gifs and use ScrollMagic/AOS
+
 
