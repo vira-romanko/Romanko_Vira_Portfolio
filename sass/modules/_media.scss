@@ -55,6 +55,12 @@
     width: 50%;
   }
 }
+
+#to-top{
+  img{
+    width: 4%;
+  }
+}
   }
   //DESKTOP
   @media screen and (min-width: 1064px) {
@@ -127,6 +133,10 @@
     .skills-purple{
       margin-top: 100px;
     }
+
+    .skills-header{
+      font-size: 4vh;
+    }
     .about{
       display:flex;
       flex-direction: row-reverse;
@@ -164,8 +174,16 @@
     margin-top: 50px;
     width: 100%;
     button{
-      width: 100%;
-    }
+     
+  
+      text-align: center;
+      padding: 10px 80px 10px 30px;
+      
+    
+  }
+  #sub-button{
+    font-size: 3vh;
+  }
   }
 }
 
@@ -173,7 +191,24 @@
   img{
     width: 150%;
   }}
- 
-    
+ .subline, .explore{
+   margin-left:80px;
+   font-size: 4vh;
+ }
+.explore{
+  font-size: 5vh;
+}
+
+.skills-header{
+  font-size: 5vh;
+  margin-bottom: 40px;
+}
+.skills{
+  margin-left: 50px;
+  font-size: 3vh;
+}
+#des{
+  margin-left: 30px;
+}
   }
   

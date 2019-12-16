@@ -1,6 +1,6 @@
 (() => {
   const scrollTo = document.querySelectorAll(".scrollTo");
-  console.log("fired!", scrollTo.textContent);
+  console.log("fired", scrollTo.textContent);
 
   scrollTo.forEach(e => e.addEventListener("click", scrollto));
 
@@ -10,5 +10,15 @@
     });
   }
 
-  
+  document.querySelector("#to-top").addEventListener("click", function() {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: {
+        y: "header",
+        offsetY: 70
+      }
+    })
+  });
+      
+    
 })();

@@ -1,0 +1,151 @@
+<section class="hero">
+       <h2 class="hidden">Hero Section</h2>
+       <article>Keeping the balance between <span id="function">functionality </span>and <span id="creative">creativity</span></article>
+       <object data="images/hero.svg" type="image/svg+xml"  id="ballon"></object>
+       
+    </section>
+    <section   class="Skills skills-purple">
+            <h1 class="sections"> Skills</h1>
+
+            <div class="skills">
+                    
+        
+                    <div id="dev">
+                        <h2 class="skills-header"> Web Development</h2>
+                        <picture  class="skills-img1">
+                          <source srcset="images/gif1_small.svg" media="(max-width: 1064px)">
+                            <img src="images/gif1_large.svg" alt="Web Development">
+                        </picture>
+                    
+                       
+                        <p>Experience in Frontend web development with HTML5 / CSS3, Javascript, NodeJS, Node JS, Wordpress.</p>
+            
+                    </div>
+                    <div id="des">
+                            <h2 class="skills-header"> Web Design</h2>
+                            <picture  class="skills-img2">
+                              <source srcset="images/gif2_small.svg" media="(max-width: 1064px)">
+                                <img src="images/gif2_large.svg" alt="Web Design">
+                            </picture>
+                          
+                            <p>Approaching digital media design and UX/UI layouts in a clean and dynamic way. Use of Adobe Creative package for the creative mood.</p>
+                        </div>
+                        <div id="production">
+                                <h2 class="skills-header"> Media Production</h2>
+                                <picture class="skills-img3">
+                                  <source srcset="images/gif3_small.svg" media="(max-width: 1064px)">
+                                    <img src="images/gif3_large.svg" alt="Media Production">
+                                </picture>
+                                <p> A positive and effective communication involves different types of media. Problem Solving solutions with Design Thinking and going outside of the box.</p>
+                    
+                            </div>
+                  
+                </div>
+
+
+    </section>
+    <section>
+        <h1 class="About sections a-title">About</h1>
+      <div  id="hero"class="about">
+
+          <picture>
+              <source srcset="images/about-mobile.jpg" media="(max-width: 786px)">
+                <img src="images/about-tablet.jpg" alt="Profile Image">
+            </picture>
+            <div class="about-text">
+              <h1 class="hello1"> OH, HELLO THERE!</h1>
+              <p>
+                
+                My name is <span class="vira">Vira</span> <span class="romanko">Romanko</span> and I am a junior front-end developer with design passion. I believe that great design is practical and oriented on the end user. 
+                Aside from designing and coding, I love music, photography and wake boarding!
+                My main goal in the work process is to break down big tasks into small ones and ensure that customers are satisfied with the end deliverables.  
+          
+          
+                <span class="vision"> Share my vision?  Take a look at my works</span>
+              </p>
+            </div>
+
+      </div>
+     
+     
+    
+
+    </section>
+
+    <section class='Portfolio portfolio'>
+      <h1 class="hidden">Portfolio Section</h1>
+      <h1 class="sections">Portfolio</h1>
+      <div class="indicator">
+        <a href="#all">All</a>
+        <div class="yellow-box"></div>
+        <a href="#development-portfolio">Development</a>
+        <div class="yellow-box"></div>
+        <a href="#design-portfolio">Design</a>
+      </div>
+
+      
+          
+       {{#each portfolio}}
+      <div class="user-panel">
+          <img  class="b-cover" src="images/{{image}}">
+          <a class="b-link" href="{{ID}}">
+              <h1 >
+              {{name}}
+          </h1>
+            
+          </a> 
+       
+          
+  
+  
+      </div>
+      
+  
+  
+          {{/each}}
+          
+      <section class="lightbox">
+        <div class="lb-content">
+             
+
+        </div>
+        <h1 class="name"></h1>
+      
+       <div class="close">
+       <span > Close </span>
+       </div>
+          
+  
+
+    </section>
+    <section class="Contact contact">
+      <h1 class="sections">Contact</h1>
+      <h2 class="subline">Don't be a stranger. Drop me a line.</h2>
+      <div class="contact-form">
+<div class="contact-balloon">
+  <h3 class="explore">Let's explore together</h3>
+  <img src="images/contact_balloon.svg"alt="hot air balloon"/>
+</div>
+<div class="contactFormFull">
+    <form action="data" method="post">
+      <label  for="name-field"> Name</label>
+      <input  id="name-field" name="name" type="text" placeholder=" Enter your name">
+      <label for="email-field"> Email</label>
+      <input id="email-field" name="email" type="email" placeholder="Enter your email">
+      <label for="subject-field"> Subject</label>
+      <input id="subject-field" name="subject"type="text" placeholder="Subject line">
+      <label for="message-field"> Message</label>
+      <textarea id="message-field" name="massage" placeholder="Message"></textarea>
+    <button id="sub-button" class="go-back"type="submit">Send</button>
+   </form>
+</div>
+      </div>
+
+    </section>
+    
+    
+   <section >
+       <h2 class="hidden"> Back to top</h2>
+        <a id="to-top" href="/" class="nav-item"><img src="images/back.svg" alt="back to top"/></a>
+   </section>
+

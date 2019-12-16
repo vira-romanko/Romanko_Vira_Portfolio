@@ -1,64 +1,63 @@
 const myVM = (() => {
+    debugger;
     // get the user buttons and fire off an async DB query with Fetch
-    let userButtons = document.querySelectorAll( ' .b-link'),
+    let userButtons = document.querySelector(".b-link"),
     lightbox = document.querySelector('.lightbox');
+      //name = document.querySelector('.name');
 
+       function GetPortfolioData(portfolio) {
 
+          let targetDiv = document.querySelector(' .lb-content'),
+          targetImg = lightbox.querySelector('img');
+        
+      
+           let portfolioDescription = `
+        <h4 class="el-name"> Element Name:<span>${portfolio.name}<span></h4>
+        <p class="desc-js">${portfolio.description}</p>
+        <p class="el-abb">${portfolio.tags}</p>
+        
+       `;
+          
+        
+
+        console.log(portfolioDescription);
+        targetDiv.innerHTML = portfolioDescription;
+        targetImg.src = portfolio.imgsrc;
+        lightbox.classList.add('show-lb');
+        
+
+        }
   
 
 
-    function renderBookQuote(bookQuote){
-        return `<ul class="b-quote">
-        ${bookQuote.map(item => `<li>${item}</li>`).join("")}
-        </ul>`
-    }
 
-
-
-    function parseBookData(book) {// person in the database is a result//model, lightbox, loading animation, css, js magic
-        let targetDiv = document.querySelector(' .lb-content'),
-            targetImg = lightbox.querySelector('img');
-
-
-        let bookDescription = `
-        <p class="desc-js">${book.description}</p>
-        <h4 class="quote-js"> Book quote:</h4>
-        ${renderBookQuote(book.quote)}`;
-
-        console.log(bookDescription);
-        targetDiv.innerHTML = bookDescription;
-        targetImg.src = book.imgsrc;
-
-        lightbox.classList.add('show-lb');
-
-
-    }
-
-    function getBookData(event) {
+    function getProjectData(event) {
         event.preventDefault();// kill the default a tag behaviour (dont navigate anywhere)
-        //debugger;
+        
 
-        // find the image closet to the anchor tag and get its src property
+        //let param = this.id.split("_")[0];
 
+        
         let imgSrc = this.previousElementSibling.getAttribute('src');
-        let url = `/books/${this.getAttribute('href')}`;//  /3 route in express. passing data dynamically
-
+        let url = `/portfolio/${this.getAttribute('href')}`;
         fetch(url)// go get the data fetch boy!
           .then(res => res.json())// parse the json result into a plain object
-          .then(data => {
-              console.log("my data resutl is: ", data)
+          .then(portfolio => {
+              console.log("my data resutl is: ", portfolio);
 
               data[0].imgsrc = imgSrc;
 
 
-              parseBookData(data[0]);
+              GetPortfolioData(portfolio[0]);
           })
           .catch((err) => {
               console.log(err)
           });
     }
 
-    userButtons.forEach(button => button.addEventListener('click', getBookData));
+   userButtons.forEach(button => button.addEventListener('click', getProjectData));
+   
+
     lightbox.querySelector(' .close').addEventListener('click',  function() {
         lightbox.classList.remove('show-lb');
     });
