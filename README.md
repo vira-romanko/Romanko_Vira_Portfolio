@@ -8,7 +8,9 @@ Hi! This is my portfolio site build.
 You can visit my site at 
 
 
-
+## PHP Contact Form
+For testing PHP contact form just use php folder.
+In terminal go ``docker-compose up``
 
 
 ## Build with/ Tools
