@@ -22,7 +22,7 @@ const myVM = (() => {
             <h4>Tags</h4>
             `;
     
-            console.log(bioContent);
+            //console.log(bioContent);
             targetDiv.innerHTML = bioContent;
             //targetImg.src = person.imgsrc;
     
