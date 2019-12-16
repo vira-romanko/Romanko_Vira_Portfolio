@@ -1,7 +1,7 @@
 
 
 const myVM = (() => {
-    debugger;
+    
     // get the user buttons and fire off an async DB query with Fetch
     let userButtons = document.querySelectorAll( '.b-link'),
     lightbox = document.querySelector('.lightbox');
