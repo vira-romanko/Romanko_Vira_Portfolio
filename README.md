@@ -7,8 +7,7 @@ Hi! This is my portfolio site build.
 
 You can visit my site at https://viraromanko.herokuapp.com/
 
-## Heroku Breakpoint
-For some reason Heroku crashes on my lightbox functionality. So I just commented out the code that is responsible for it (main.js). It was not working perfectyly in my localhost - but it was working.... I still left the code so you can see that it is there.
+
 
 
 ## PHP Contact Form
