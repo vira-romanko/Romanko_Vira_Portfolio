@@ -18,6 +18,9 @@
         flex: 1;
        //animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
        text-align:center;
+       img {
+        filter: grayscale(100%);
+      }
   
     }
     
@@ -170,7 +173,12 @@
   
   
 
-   .b-cover { max-width: 300px; }
+   .b-cover { 
+     max-width: 300px;
+     img{
+       filter: grayscale(100%);
+     }
+     }
 
    .b-link { 
        display: block; 
