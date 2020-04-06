@@ -12,7 +12,17 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname + '/views'));
 
 app.use('/', require('./routes/index.js'));
+//app.use('/project1', require('./routes/index.js'));
+app.use((req, res) =>{
+  res.render('project1', { layout:'project1'});
 
+});
+app.use((req, res, next) =>{
+  res.render('project2', { layout:'project2'});
+
+});
+
+app.use(express.static('public'));
 
 
 app.use((req, res, next) =>{

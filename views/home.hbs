@@ -1,6 +1,7 @@
+
 <section class="hero">
        <h2 class="hidden">Hero Section</h2>
-       <article>Keeping the balance between <span id="function">functionality </span>and <span id="creative">creativity</span></article>
+       <article class="text"></article>
        <object data="images/hero.svg" type="image/svg+xml"  id="ballon"></object>
        
     </section>
@@ -12,8 +13,8 @@
         
                     <div id="dev">
                         <h2 class="skills-header"> Web Development</h2>
-                        <picture  class="skills-img1">
-                          <source srcset="images/gif1_small.svg" media="(max-width: 1064px)">
+                        <picture data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out"  class="skills-img1">
+                          <source   srcset="images/gif1_small.svg" media="(max-width: 1064px)">
                             <img src="images/gif1_large.svg" alt="Web Development">
                         </picture>
                     
@@ -23,7 +24,7 @@
                     </div>
                     <div id="des">
                             <h2 class="skills-header"> Web Design</h2>
-                            <picture  class="skills-img2">
+                            <picture data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="50" class="skills-img2">
                               <source srcset="images/gif2_small.svg" media="(max-width: 1064px)">
                                 <img src="images/gif2_large.svg" alt="Web Design">
                             </picture>
@@ -32,9 +33,9 @@
                         </div>
                         <div id="production">
                                 <h2 class="skills-header"> Media Production</h2>
-                                <picture class="skills-img3">
+                                <picture data-aos="fade-out"  data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="90" class="skills-img3">
                                   <source srcset="images/gif3_small.svg" media="(max-width: 1064px)">
-                                    <img src="images/gif3_large.svg" alt="Media Production">
+                                    <img   src="images/gif3_large.svg" alt="Media Production">
                                 </picture>
                                 <p> A positive and effective communication involves different types of media. Problem Solving solutions with Design Thinking and going outside of the box.</p>
                     
@@ -56,9 +57,8 @@
               <h1 class="hello1"> OH, HELLO THERE!</h1>
               <p>
                 
-                My name is <span class="vira">Vira</span> <span class="romanko">Romanko</span> and I am a junior front-end developer with design passion. I believe that great design is practical and oriented on the end user. 
-                Aside from designing and coding, I love music, photography and wake boarding!
-                My main goal in the work process is to break down big tasks into small ones and ensure that customers are satisfied with the end deliverables.  
+                My name is <span class="vira">Vira</span> <span class="romanko">Romanko</span> and I am a junior front-end developer with design passion.
+                I believe that great design is practical and user-oriented. Aside from coding and designing, I love music, photography, and wakeboarding! My main goal in the work process is to break down big tasks into small ones and ensure that customers are satisfied with the end deliverables.
           
           
                 <span class="vision"> Share my vision?  Take a look at my works</span>
@@ -82,12 +82,51 @@
         <div class="yellow-box"></div>
         <a href="#design-portfolio">Design</a>
       </div>
-
+ 
       
-    <section id="pices">  
+    <section id="pices">
+        <div class="user-panel">
+        <img  class="b-cover" src="images/project_10.jpg"> 
+         <a class="b-link" href="project1">
+              <h1 class="name" >
+              Teentalks
+          </h1>
+            
+          </a> 
+       </div>
+       <div class="user-panel">
+        <img  class="b-cover" src="images/project_8.png"> 
+         <a class="b-link"  href="project2">
+              <h1 class="name" >
+              Ontario Summer
+          </h1>
+            
+          </a> 
+       </div>
+       
+         <div class="user-panel">
+        <img  class="b-cover" src="images/project_9.jpg"> 
+         <a class="b-link" href="#">
+              <h1 class="name" >
+              Roku Flashback
+          </h1>
+            
+          </a> 
+       </div>
+         <div class="user-panel">
+        <img  class="b-cover" src="images/project_7.jpg"> 
+         <a class="b-link" href="#">
+              <h1 class="name" >
+              Chat App
+          </h1>
+            
+          </a> 
+       </div>
+       
        {{#each portfolio}}
       <div class="user-panel">
           <img  class="b-cover" src="images/{{image}}">
+            
           <a class="b-link" href="{{ID}}">
               <h1 class="name" >
               {{name}}
@@ -105,7 +144,9 @@
           {{/each}}
           </section>
           
+          
       <section class="lightbox purple">
+
         <div class="lb-content">
              <p>{{description}}</p>
 
@@ -146,6 +187,17 @@
       </div>
 
     </section>
+    <seciton>
+      <h2 class=" resume">Download my resume</h2>
+        <div id="container-resume">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+            <a href="includes/resume.pdf"  target="_blank"><span class="button-text">Resume</span></a>
+             </button>
+             </div>
+    </seciton>
     
     
    <section >
